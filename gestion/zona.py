@@ -23,6 +23,8 @@ class Zona:
 
     # Metodos
     def agregarAnimales(self,animal):
+        if self._animales == None:
+            self._animales = []
         self._animales.append(animal)
     def cantidadAnimales(self):
         return len(self._animales)
